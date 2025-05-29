@@ -11,6 +11,18 @@ public class LogInUser {
         this.bloqueado = false;
     }
 
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
     public boolean isBloqueado() {
         return bloqueado;
     }
