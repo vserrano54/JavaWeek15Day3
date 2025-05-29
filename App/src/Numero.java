@@ -23,9 +23,12 @@ public class Numero {
     }
 
     public boolean terminaEnCero() {
-        String numText = String.valueOf(numero);
-        char ultimoCaracter = numText.charAt(numText.length() - 1);
-        return ultimoCaracter == '0';
+       
+        return numero%10==0;
+    }
+
+    public boolean isNumero73(){
+        return numero==73;
     }
 
     

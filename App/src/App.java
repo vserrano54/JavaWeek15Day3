@@ -10,24 +10,16 @@ public class App {
             num = new Numero(i);
             
             if (i <= 137-1){
-                 if (num.esNumeroPar())
+                 if (num.esNumeroPar() && !num.terminaEnCero()||num.isNumero73())
                     numeros.add(num);
-
-            }else if (num.esNumeroPar()&&!num.terminaEnCero())
-                  numeros.add(num);
             }
 
-        System.out.println("Lista de números pares del 37 al 173");
+        System.out.println("Lista de números pares del 37 al 173 incluyendo el número 73");
            
         for (Numero n: numeros){
             System.out.println(n);
         }
 
-        num = new Numero(73);
-
-        if (!num.esNumeroPar()){
-            System.out.println("El numero 73 no cumple con la norma de ser par, no es posible agregarlo a la lista");
-        }
-
     }
+}
 }
